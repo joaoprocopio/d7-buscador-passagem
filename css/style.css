@@ -1,40 +1,50 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-* {
-	font-family: "Roboto", sans-serif;
-}
-
 :root {
 	--no-color: transparent;
 	--white: #ffffff;
-	--ligh-gray: #909090;
+	--light-gray: #909090;
 	--charcoal: #424242;
 	--pink: #f11075;
 	--blue: #0277bd;
 }
 
-/* top navigation */
-.nav-top {
-	position: fixed;
-	display: block;
-	height: 56px;
+* {
+	font-family: "Roboto", sans-serif;
 }
 
-.nav-top-container {
-	display: flex;
+head {
+	display: none;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+}
+
+.layout {
+	display: grid;
+	align-content: space-between;
 	height: 100%;
+	width: 100%;
+}
+
+/* top navigation */
+.nav-top {
+	display: flex;
+	height: 56px;
 }
 
 /* bottom navigation */
 
 .nav-bottom {
-	position: fixed;
-	display: block;
+	display: flex;
 	height: 56px;
 }
 
-.nav-bottom-container {
+/* main content */
+main {
 	display: flex;
-	height: 100%;
+	flex-direction: column;
 }
