@@ -149,6 +149,7 @@ main {
 	display: flex;
 	align-items: center;
 	height: 44px;
+	width: 100%;
 	border: 1px solid var(--medium-gray);
 	border-radius: 6px;
 }
@@ -156,14 +157,28 @@ main {
 .fm-ct-rw > input {
 	border: none;
 	height: 100%;
+	width: 100%;
 	padding: 0 12px;
 }
 
 .fm-ct-rw > img {
 	margin-left: 16px;
-	width: 1rem;
 }
 
-.fm-ct-rw > a > img {
-	width: 1rem;
+.fm-ct-rw > a {
+	display: flex;
+	align-items: center;
+	width: auto;
+	height: 100%;
+	padding: 0 16px;
+}
+
+.fm-w12 {
+	min-width: 0.75em;
+	width: 0.75em;
+}
+
+.fm-w14 {
+	min-width: 1em;
+	width: 1em;
 }
