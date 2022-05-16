@@ -3,15 +3,15 @@
 
 :root {
 	--no-color: transparent;
+	--dark-pink: #ad1457;
+	--medium-pink: #f11075;
+	--light-pink: #e45776;
+	--blue: #0277bd;
 	--charcoal: #424242;
 	--heavy-gray: #909090;
 	--medium-gray: #c1c1c1;
 	--light-gray: #e5e5e5;
 	--white: #ffffff;
-	--dark-pink: #ad1457;
-	--medium-pink: #f11075;
-	--light-pink: #e45776;
-	--blue: #0277bd;
 }
 
 * {
@@ -174,11 +174,13 @@ main {
 }
 
 .fm-w12 {
+	font-size: inherit;
 	min-width: 0.75em;
 	width: 0.75em;
 }
 
 .fm-w14 {
+	font-size: inherit;
 	min-width: 1em;
 	width: 1em;
 }
