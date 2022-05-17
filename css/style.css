@@ -5,6 +5,7 @@
 	--no-color: transparent;
 	--dark-pink: #ad1457;
 	--medium-pink: #f11075;
+	--specific-pink: #ff0778;
 	--light-pink: #e45776;
 	--blue: #0277bd;
 	--charcoal: #424242;
@@ -35,7 +36,7 @@ body {
 	height: 56px;
 	min-height: 56px;
 	position: fixed;
-	background-color: white;
+	background-color: var(--white);
 }
 
 .nt {
@@ -85,13 +86,13 @@ body {
 /* main content */
 
 main {
-	height: 100%;
 	padding-top: 56px;
+	height: 100%;
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: center top;
 	background-size: cover;
 	background-image: url(../img/ico-content/banner-mobile.png);
-	background-color: var(--light-pink);
+	background-color: var(--specific-pink);
 }
 
 /* heading section */
