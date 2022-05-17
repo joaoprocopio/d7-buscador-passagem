@@ -174,13 +174,11 @@ main {
 }
 
 .fm-w12 {
-	font-size: inherit;
 	min-width: 0.75em;
 	width: 0.75em;
 }
 
 .fm-w14 {
-	font-size: inherit;
 	min-width: 1em;
 	width: 1em;
 }
