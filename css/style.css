@@ -22,8 +22,7 @@
 }
 
 body {
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	width: 100%;
 	height: 100%;
 }
@@ -31,13 +30,18 @@ body {
 /* top navigation */
 
 .nt-ct {
+	top: 0;
 	width: 100%;
+	height: 56px;
 	min-height: 56px;
+	position: fixed;
+	background-color: white;
 }
 
 .nt {
 	width: 100%;
-	min-height: 100%;
+	height: 56px;
+	min-height: 56px;
 	padding: 0 24px;
 	display: flex;
 	justify-content: space-between;
@@ -81,6 +85,8 @@ body {
 /* main content */
 
 main {
+	height: 100%;
+	padding-top: 56px;
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
@@ -126,7 +132,6 @@ main {
 	flex-direction: column;
 	align-items: stretch;
 	background-color: var(--white);
-	border: 1px solid var(--light-gray);
 	border-radius: 6px;
 	padding: 8px 16px;
 }
@@ -156,6 +161,7 @@ main {
 
 .fm-ct-rw > input {
 	border: none;
+	background: var(--no-color);
 	height: 100%;
 	width: 100%;
 	padding: 0 12px;
@@ -174,11 +180,85 @@ main {
 }
 
 .fm-w12 {
-	min-width: 0.75em;
-	width: 0.75em;
+	min-width: 12px;
+	width: 12px;
 }
 
 .fm-w14 {
-	min-width: 1em;
-	width: 1em;
+	min-width: 14px;
+	width: 14px;
+}
+
+.fm-w16 {
+	min-width: 16px;
+	width: 16px;
+}
+
+.fm-w18 {
+	min-width: 18px;
+	width: 18px;
+}
+
+.fm-w20 {
+	min-width: 20.25px;
+	width: 20.25px;
+}
+
+.fm-ct-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	background-color: var(--medium-pink);
+	color: var(--white);
+	margin: 8px 0;
+	height: 44px;
+	border: none;
+}
+
+.fm-ct-btn > img {
+	margin-right: 8px;
+}
+
+/* bottom navigation */
+
+.nb-ct {
+	bottom: 0;
+	width: 100%;
+	height: 56px;
+	min-height: 56px;
+	position: fixed;
+	background-color: var(--white);
+}
+
+.nb {
+	display: flex;
+	align-items: center;
+	height: 56px;
+	min-height: 56px;
+}
+
+.nb-btn {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.nb-btn > a {
+	width: 100%;
+	text-decoration: none;
+	color: var(--charcoal);
+}
+
+.nb-btn > a > img {
+	display: inline-flex;
+}
+
+.nb-btn > a > div {
+	font-size: 12px;
 }
