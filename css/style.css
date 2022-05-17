@@ -36,7 +36,7 @@ body {
 	height: 56px;
 	min-height: 56px;
 	position: fixed;
-	background-color: var(--white);
+	background-color: var(--no-color);
 }
 
 .nt {
@@ -47,6 +47,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background-color: var(--white);
 }
 
 .nt-lg-ct {
@@ -86,8 +87,8 @@ body {
 /* main content */
 
 main {
-	padding-top: 56px;
-	height: 1620px;
+	margin: 56px 0;
+	height: 947.56px;
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
@@ -229,7 +230,7 @@ main {
 	height: 56px;
 	min-height: 56px;
 	position: fixed;
-	background-color: var(--white);
+	background-color: var(--no-color);
 }
 
 .nb {
@@ -237,6 +238,7 @@ main {
 	align-items: center;
 	height: 56px;
 	min-height: 56px;
+	background-color: var(--white);
 }
 
 .nb-btn {
